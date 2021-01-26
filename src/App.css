@@ -78,3 +78,10 @@
 .banner-detail-2{
   margin-top: 50px;
 }
+.banner2-detail{
+  padding-top: 60px;
+  padding-bottom: 90px;
+}
+.pos-abs{
+  position: absolute;
+}
