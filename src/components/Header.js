@@ -1,4 +1,5 @@
 import banner from '../image/banner.jpg';
+import List from "./List";
 function Home(){
     return(
     
@@ -7,29 +8,16 @@ function Home(){
     <nav className="navbar navbar-expand-sm ">
       <a href="/"><img src={banner}  height="30px"/></a>
       <ul className="pl-2 navbar-nav ">
-        <li className="nav-item">
-          <a href="/" className="nav-link text-white">Home</a>
-        </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link text-white">Herbal Life</a>
-        </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link text-white">Store</a>
-        </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link text-white">Gallary</a>
-        </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link text-white">Blog</a>
-        </li>
-        <li className="nav-item">
-          <a href="#" className="nav-link text-white">Contuct Us</a>
-        </li>
+        <List text="Home" />
+        <List text="Herbal Life" />
+        <List text="Store" />
+        <List text="Gallary" />
+        <List text="Blog" />
+        <List text="Contuct Us" />
+        
       </ul>
       <ul className="pl-2 navbar-nav ml-auto ">
-        <li className="nav-item">
-          <a href="#" className="nav-link fa fa-facebook text-white" />
-        </li>
+        <List icon="facebook" />
         <li className="nav-item">
           <a href="#" className="nav-link fa fa-twitter text-white" />
         </li>
