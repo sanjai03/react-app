@@ -26,7 +26,7 @@ function Home(){
               </div>
             </div>
             </div>
-             <div class="row my-3">
+             <div class="row my-3" >
               <div class="col-1"></div>
               <div class="col-5">
                 <h4 class="text-success">About Us</h4>
