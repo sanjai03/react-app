@@ -7,7 +7,15 @@ import Caurosel from '../components/Caurosel'
 import banner2 from '../image/banner2.jpg'
 import Latestnews from '../components/Latestnews'
 import Heading from '../components/Heading'
+import axios from 'axios'
+import { useState,useEffect } from 'react';
 function Home(){
+const[posts,setPosts]=useState([])
+axios.get('https://jsonplaceholder.typicode.com/posts')
+      .then((res)=>{
+        console.log(res)
+        setPosts(res.data)
+      })
     return(
         <div>
             <Header />
@@ -70,7 +78,7 @@ function Home(){
                 <img src="../image/gallary.jpg" width="100%" height="60%" />
               </div>
               
-           <Latestnews />
+           {posts && posts.length&&<Latestnews posts={posts} />}
           </div>  
             <Footer />
         </div>
