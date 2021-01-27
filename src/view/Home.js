@@ -14,7 +14,7 @@ function Home(){
             <div class="container-fluid ">
           <div>
             <img class="banner-background" src={logo} height="50%" width="95%" />
-            <div class="row">
+            <div class="row" style={{height:"300px"}}>
               <div class="col-2"></div>
               <div class="col-4 banner-detail-1" >
                   <h4>Welcome to</h4>
